@@ -60,7 +60,7 @@ from Google Fonts.
 
 ## Live web page
 
-* [The Grimoire (Claude Artifact)](https://claude.ai/code/artifact/44eccf67-65a8-452d-902e-6f4af46d2510)
+* [The Grimoire](https://tannerrj.github.io/crossfire-grimoire/)
 
 ## Rebuilding the data
 
