@@ -1,0 +1,14 @@
+# Intermediate data files from tools/extract_spells.py.
+# spells_classified.json is checked in on purpose, so build.py works
+# without a crossfire-arch checkout. spells.json is not.
+spells.json
+
+# Local duplicate of index.html, not part of the tracked build output.
+grimoire.html
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

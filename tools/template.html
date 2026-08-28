@@ -1,0 +1,844 @@
+<title>Crossfire Grimoire</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    /* Crossfire Atlas site palette: sage/olive greens, gold highlight, charcoal ink */
+    --parchment: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #cad5b7;
+    --ink: #333333;
+    --ink-soft: #4a4a4a;
+    --muted: #676767;
+    --border: #333333;
+    --border-soft: #b7c2a2;
+
+    --sorcery: #6b7d4e;
+    --sorcery-soft: #eaf0df;
+    --pyromancy: #a90a08;
+    --pyromancy-soft: #f8dcdb;
+    --evocation: #4a7a4a;
+    --evocation-soft: #e2ecdd;
+    --summoning: #74875f;
+    --summoning-soft: #eaf0e2;
+    --praying: #9c7a00;
+    --praying-soft: #fdf3cf;
+
+    --row-alt: #eeeeee;
+    --row-hover: #dfe8cd;
+    --dim-cell: #999999;
+    --chip-bg: #cad5b7;
+    --chip-active-ink: #ffffff;
+    --good: #4f7a3f;
+    --good-soft: #e3ecd9;
+    --bad: #a90a08;
+    --bad-soft: #f8dcdb;
+
+    --shadow: 0 8px 24px rgba(51, 51, 51, 0.16);
+    --font-display: "Cinzel", "Iowan Old Style", serif;
+    --font-body: "Spectral", "Iowan Old Style", Georgia, serif;
+    --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --parchment: #1b2117;
+      --surface: #212a1c;
+      --surface-2: #3a4530;
+      --ink: #e7ecdf;
+      --ink-soft: #bcc4ac;
+      --muted: #8b9478;
+      --border: #4a5640;
+      --border-soft: #333d29;
+
+      --sorcery: #a8c284;
+      --sorcery-soft: #2c3524;
+      --pyromancy: #e8776e;
+      --pyromancy-soft: #3a2420;
+      --evocation: #8fc47e;
+      --evocation-soft: #22301f;
+      --summoning: #b7c79f;
+      --summoning-soft: #2c3324;
+      --praying: #e0c25a;
+      --praying-soft: #3a3216;
+
+      --row-alt: #232b1d;
+      --row-hover: #2d3624;
+      --dim-cell: #55603f;
+      --chip-bg: #3a4530;
+      --chip-active-ink: #1b2117;
+      --good: #9fd17e;
+      --good-soft: #26311f;
+      --bad: #f0897d;
+      --bad-soft: #3a2420;
+
+      --shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --parchment: #1b2117;
+    --surface: #212a1c;
+    --surface-2: #3a4530;
+    --ink: #e7ecdf;
+    --ink-soft: #bcc4ac;
+    --muted: #8b9478;
+    --border: #4a5640;
+    --border-soft: #333d29;
+
+    --sorcery: #a8c284;
+    --sorcery-soft: #2c3524;
+    --pyromancy: #e8776e;
+    --pyromancy-soft: #3a2420;
+    --evocation: #8fc47e;
+    --evocation-soft: #22301f;
+    --summoning: #b7c79f;
+    --summoning-soft: #2c3324;
+    --praying: #e0c25a;
+    --praying-soft: #3a3216;
+
+    --row-alt: #232b1d;
+    --row-hover: #2d3624;
+    --dim-cell: #55603f;
+    --chip-bg: #3a4530;
+    --chip-active-ink: #1b2117;
+    --good: #9fd17e;
+    --good-soft: #26311f;
+    --bad: #f0897d;
+    --bad-soft: #3a2420;
+
+    --shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 28px clamp(14px, 3vw, 40px) 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  header.masthead .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  header.masthead h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: 0.01em;
+  }
+  header.masthead p.sub {
+    margin: 2px 0 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  header.masthead p.sub b { color: var(--ink); font-weight: 600; }
+
+  .stats-strip {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+  }
+  .stats-strip strong {
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- controls ---- */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: var(--shadow);
+  }
+  .controls .group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .controls .group-label {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-right: 4px;
+  }
+  input[type="search"] {
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 7px 12px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--parchment);
+    color: var(--ink);
+    min-width: 190px;
+  }
+  input[type="search"]:focus-visible, .chip:focus-visible, .lvl-input:focus-visible, .lvl-go:focus-visible {
+    outline: 2px solid var(--sorcery);
+    outline-offset: 1px;
+  }
+  .chip {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 6px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--chip-bg);
+    color: var(--ink-soft);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+    white-space: nowrap;
+  }
+  .chip:hover { border-color: var(--muted); }
+  .chip[aria-pressed="true"] {
+    background: var(--school-color, var(--ink));
+    color: var(--chip-active-ink);
+    border-color: var(--school-color, var(--ink));
+    font-weight: 600;
+  }
+  .chip.sorcery { --school-color: var(--sorcery); }
+  .chip.pyromancy { --school-color: var(--pyromancy); }
+  .chip.evocation { --school-color: var(--evocation); }
+  .chip.summoning { --school-color: var(--summoning); }
+  .chip.praying { --school-color: var(--praying); }
+
+  .chip.path-chip[data-state="attuned"] {
+    background: var(--good);
+    color: var(--chip-active-ink);
+    border-color: var(--good);
+    font-weight: 600;
+  }
+  .chip.path-chip[data-state="repelled"] {
+    background: var(--bad);
+    color: var(--chip-active-ink);
+    border-color: var(--bad);
+    font-weight: 600;
+  }
+  .chip.path-chip .mark { font-weight: 700; margin-right: 3px; }
+
+  details.attune-panel .legend-body { grid-template-columns: 1fr; }
+  .attune-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 6px 0 14px;
+  }
+  .attune-reset {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .attune-reset:hover { border-color: var(--muted); color: var(--ink-soft); }
+
+  .lvl-jump { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+  .lvl-input {
+    width: 56px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    padding: 6px 8px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--parchment);
+    color: var(--ink);
+  }
+  .lvl-go {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--chip-bg);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .lvl-go:hover { border-color: var(--muted); }
+
+  /* ---- legend ---- */
+  details.legend {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 4px 16px;
+  }
+  details.legend > summary {
+    cursor: pointer;
+    padding: 10px 0;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    list-style: none;
+  }
+  details.legend > summary::-webkit-details-marker { display: none; }
+  details.legend > summary::before {
+    content: "▸ ";
+    color: var(--muted);
+  }
+  details.legend[open] > summary::before { content: "▾ "; }
+  .legend-body {
+    padding: 4px 0 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px 28px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+  .legend-body h4 {
+    margin: 0 0 4px;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+  }
+  .legend-body code {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 4px;
+    color: var(--ink);
+  }
+  .legend-body p { margin: 0 0 6px; }
+  .legend-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+
+  /* ---- table ---- */
+  .table-wrap {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 74vh;
+    box-shadow: var(--shadow);
+    background: var(--surface);
+  }
+  table.grimoire {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 11.5px;
+    width: max-content;
+  }
+  table.grimoire caption { display: none; }
+
+  thead th {
+    position: sticky;
+    top: 0;
+    background: var(--surface-2);
+    color: var(--ink-soft);
+    font-weight: 500;
+    padding: 6px 4px;
+    border-bottom: 1px solid var(--border);
+    border-left: 1px solid var(--border-soft);
+    text-align: center;
+    z-index: 2;
+    min-width: 40px;
+  }
+  thead th.lvl-decade { color: var(--ink); font-weight: 700; }
+  thead th.name-head {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    text-align: left;
+    background: var(--surface-2);
+    padding: 8px 14px;
+    min-width: 250px;
+    border-right: 2px solid var(--border);
+    font-family: var(--font-display);
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  tbody td, tbody th { border-left: 1px solid var(--border-soft); }
+  tbody tr:nth-child(even) { background: var(--row-alt); }
+  tbody tr:hover { background: var(--row-hover); }
+  tbody tr th.name-cell { background: var(--surface); }
+  tbody tr:nth-child(even) th.name-cell { background: var(--row-alt); }
+  tbody tr:hover th.name-cell { background: var(--row-hover); }
+
+  td.data-cell {
+    padding: 5px 3px;
+    text-align: center;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  td.data-cell.locked { color: var(--dim-cell); }
+  td.data-cell.eff-damage { color: var(--pyromancy); }
+  td.data-cell.eff-heal, td.data-cell.eff-fullheal, td.data-cell.eff-hpbonus { color: var(--summoning); }
+  td.data-cell.eff-resist { color: var(--evocation); }
+  td.data-cell.eff-summon, td.data-cell.eff-enchant, td.data-cell.eff-count { color: var(--sorcery); }
+  td.data-cell.eff-transfer { color: var(--praying); }
+  td.data-cell.eff-stat { color: var(--ink-soft); }
+  td.data-cell.eff-none { color: var(--ink-soft); }
+
+  th.name-cell {
+    position: sticky;
+    left: 0;
+    background: var(--surface);
+    text-align: left;
+    padding: 7px 14px;
+    border-right: 2px solid var(--border);
+    font-weight: 400;
+    z-index: 1;
+    min-width: 250px;
+  }
+  th.name-cell .nm {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--ink);
+    display: block;
+  }
+  th.name-cell .meta {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+  }
+  .school-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; flex: none; }
+  .school-dot.sorcery { background: var(--sorcery); }
+  .school-dot.pyromancy { background: var(--pyromancy); }
+  .school-dot.evocation { background: var(--evocation); }
+  .school-dot.summoning { background: var(--summoning); }
+  .school-dot.praying { background: var(--praying); }
+
+  .path-tag { }
+  .path-tag.attuned { color: var(--good); font-weight: 600; }
+  .path-tag.repelled { color: var(--bad); font-weight: 600; }
+
+  .empty-state {
+    padding: 40px;
+    text-align: center;
+    color: var(--muted);
+    font-family: var(--font-body);
+    font-style: italic;
+  }
+
+  footer.note {
+    font-size: 12.5px;
+    color: var(--muted);
+    padding-top: 4px;
+  }
+  footer.note a {
+    color: var(--sorcery);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  footer.note a:hover { color: var(--ink); }
+  footer.note .sep { margin: 0 8px; }
+
+  ::-webkit-scrollbar { width: 12px; height: 12px; }
+  ::-webkit-scrollbar-track { background: var(--surface); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 6px; border: 3px solid var(--surface); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+</style>
+
+<div class="page">
+  <header class="masthead">
+    <div class="eyebrow">Crossfire &middot; Player Reference</div>
+    <h1>The Grimoire</h1>
+    <p class="sub">Every learnable spell and prayer, with <b>casting cost</b> and <b>effect magnitude</b> computed from the live archetype data and server formulas for every caster level from <b>1 to 115</b>.</p>
+    <div class="stats-strip">
+      <span><strong id="stat-total">0</strong> spells &amp; prayers</span>
+      <span><strong id="stat-visible">0</strong> shown</span>
+      <span><strong>115</strong> levels per row</span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="group">
+      <span class="group-label">Search</span>
+      <input type="search" id="search" placeholder="spell or prayer name&hellip;" autocomplete="off">
+    </div>
+    <div class="group" id="school-chips">
+      <span class="group-label">School</span>
+    </div>
+    <div class="group" id="effect-chips">
+      <span class="group-label">Effect</span>
+    </div>
+    <div class="lvl-jump">
+      <span class="group-label">Jump to level</span>
+      <input type="number" class="lvl-input" id="lvl-input" min="1" max="115" value="1">
+      <button class="lvl-go" id="lvl-go" type="button">Go</button>
+    </div>
+  </div>
+
+  <details class="legend attune-panel" id="attune-panel">
+    <summary id="attune-summary">Path attunement &mdash; neutral</summary>
+    <div class="legend-body">
+      <div>
+        <p>Click a path to cycle <b>neutral &rarr; attuned &rarr; repelled &rarr; neutral</b>. Attunement mirrors your character's god/relic bonuses: an attuned path costs ~20% less and scales as if you were 4 levels higher; a repelled path costs ~25% more and scales as if you were 4 levels lower (and unlocks 4 levels later). Each spell's path(s) are listed under its name below &mdash; only matching paths are affected.</p>
+        <div class="attune-grid" id="path-chips"></div>
+        <button class="attune-reset" id="attune-reset" type="button">Reset to neutral</button>
+      </div>
+    </div>
+  </details>
+
+  <details class="legend">
+    <summary>How to read this grimoire</summary>
+    <div class="legend-body">
+      <div>
+        <h4>Cost column</h4>
+        <p>Each level cell shows <code>cost</code> if flat, or <code>cost / effect</code> when the spell also has a scaling magnitude. Sorcery / pyromancy / evocation / summoning spend <b>mana</b>; praying spends <b>grace</b>. Cost formula: <code>base &times; (1 + max(0, (level&minus;min level) / scale))</code>, floored &mdash; flat if the archetype sets no scale value.</p>
+      </div>
+      <div>
+        <h4>Effect column</h4>
+        <p><code>base + floor(max(0, level&minus;min level) / divisor)</code>, the same adjustment the server applies to damage, resistances, and similar magnitudes. Resistances cap at 100%.</p>
+      </div>
+      <div>
+        <h4><span class="legend-dot" style="background:var(--pyromancy)"></span>Damage &amp; <span class="legend-dot" style="background:var(--summoning)"></span>healing</h4>
+        <p>Healing spells restore a fixed average (dice-based) amount that does <b>not</b> scale with caster level in the current code &mdash; only the grace cost changes. <code>Full heal</code> spells restore all missing HP outright.</p>
+      </div>
+      <div>
+        <h4><span class="legend-dot" style="background:var(--evocation)"></span>Resistance &amp; <span class="legend-dot" style="background:var(--sorcery)"></span>summon/utility</h4>
+        <p>Stat spells (Str/Dex/Con/Cha) grant a small flat, partly random bonus &mdash; not level scaled. &ldquo;Summon power&rdquo; reflects the summoned ally's own stat, not direct damage you deal.</p>
+      </div>
+      <div>
+        <h4>Dashes &amp; blanks</h4>
+        <p>A dim <code>&mdash;</code> before a spell's minimum level means it can't be cast yet. Roughly half of all entries are utility effects (illusion, teleport, detection, wards) with no single tracked magnitude &mdash; only their cost is shown.</p>
+      </div>
+      <div>
+        <h4>Assumptions &amp; source</h4>
+        <p>Figures default to a caster with no path attunement/repulsion &mdash; use the &ldquo;Path attunement&rdquo; panel above the table to model your own god/relic bonuses per path. A path your god <em>denies</em> outright (unlearnable, not just costlier) isn't modeled here. Multi-effect buffs (marked in source data) show only their primary number. Computed directly from <code>crossfire-crossfire-arch/spell/**/*.arc</code> and the formulas in <code>spell_util.cpp</code>, <code>spell_attack.cpp</code>, and <code>spell_effect.cpp</code>.</p>
+      </div>
+    </div>
+  </details>
+
+  <div class="table-wrap" id="table-wrap">
+    <table class="grimoire" id="grimoire-table">
+      <caption>Crossfire spell and prayer cost/effect by level</caption>
+      <thead><tr id="head-row"></tr></thead>
+      <tbody id="grimoire-body"></tbody>
+    </table>
+  </div>
+
+  <footer class="note">Formulas verified against <code>server/spell_util.cpp</code> (SP_level_spellpoint_cost, SP_level_dam_adjust), <code>server/spell_attack.cpp</code>, and <code>server/spell_effect.cpp</code> in the Crossfire server source. Default server setting <code>spellpoint_level_depend true</code> assumed.<span class="sep">&middot;</span><a href="https://claude.ai/code/artifact/44eccf67-65a8-452d-902e-6f4af46d2510" target="_blank" rel="noopener">View as a Claude Artifact</a></footer>
+</div>
+
+<script>
+const SPELLS = __SPELLS_JSON__;
+const MAX_LEVEL = 115;
+const SCHOOLS = ["Sorcery", "Pyromancy", "Evocation", "Summoning", "Praying"];
+const EFFECT_TYPES = [
+  ["damage", "Damage"],
+  ["heal", "Healing"],
+  ["fullheal", "Full heal"],
+  ["resist", "Resistance"],
+  ["hpbonus", "HP bonus"],
+  ["stat", "Stat bonus"],
+  ["summon", "Summon power"],
+  ["transfer", "SP transfer"],
+  ["count", "Item count"],
+  ["enchant", "Enchant bonus"],
+  ["utility", "Utility"],
+];
+const PATH_NAMES = [
+  "Protection", "Fire", "Frost", "Electricity", "Missiles", "Self", "Summoning",
+  "Abjuration", "Restoration", "Detonation", "Mind", "Creation", "Teleportation",
+  "Information", "Transmutation", "Transferrence", "Turning", "Wounding", "Death", "Light",
+];
+
+document.getElementById("stat-total").textContent = SPELLS.length;
+
+// ---- attunement state (bitmasks over PATH_NAMES indices) ----
+const attune = { attuned: 0, repelled: 0 };
+
+function pathIsAttuned(spell) { return (spell.path & attune.attuned) !== 0; }
+function pathIsRepelled(spell) { return (spell.path & attune.repelled) !== 0; }
+function pathNamesFor(mask) {
+  const names = [];
+  for (let i = 0; i < PATH_NAMES.length; i++) if (mask & (1 << i)) names.push(PATH_NAMES[i]);
+  return names;
+}
+
+// caster_level(): the effective level used for cost & the damage-adjust numerator
+function casterLevelEff(spell, level, isAttuned, isRepelled) {
+  let lv = level + (isRepelled ? -2 : 0) + (isAttuned ? 2 : 0);
+  return Math.max(1, lv);
+}
+// min_casting_level(): the effective minimum level, used as the damage-adjust base and the cast gate
+function minCastingLevelEff(spell, isAttuned, isRepelled) {
+  let lv = spell.level + (isRepelled ? 2 : 0) + (isAttuned ? -2 : 0);
+  return Math.max(1, lv);
+}
+
+function castableAt(spell, level, isAttuned, isRepelled) {
+  const castLevel = casterLevelEff(spell, level, isAttuned, isRepelled);
+  const minLevel = minCastingLevelEff(spell, isAttuned, isRepelled);
+  return minLevel <= castLevel;
+}
+
+function costAt(spell, level, isAttuned, isRepelled) {
+  const base = spell.sp || spell.grace;
+  if (!base) return 0;
+  const scale = spell.sp ? spell.maxsp : spell.maxgrace;
+  const levelEff = casterLevelEff(spell, level, isAttuned, isRepelled);
+  let cost = scale > 0
+    ? Math.floor(base * (1 + Math.max(0, (levelEff - spell.level) / scale)))
+    : base;
+  const mult = (isAttuned ? 0.8 : 1) * (isRepelled ? 1.25 : 1);
+  cost = Math.floor(cost * mult);
+  if (!cost && base) cost = 1;
+  return cost;
+}
+
+function effectAt(spell, level, isAttuned, isRepelled) {
+  const e = spell.effect;
+  switch (e.type) {
+    case "damage":
+    case "hpbonus":
+    case "summon":
+    case "transfer":
+    case "count":
+    case "enchant": {
+      const mod = spell.dam_modifier;
+      const levelEff = casterLevelEff(spell, level, isAttuned, isRepelled);
+      const minEff = minCastingLevelEff(spell, isAttuned, isRepelled);
+      const adj = mod > 0 ? Math.floor(Math.max(0, levelEff - minEff) / mod) : 0;
+      return e.base + adj;
+    }
+    case "resist": {
+      const mod = spell.dam_modifier;
+      const levelEff = casterLevelEff(spell, level, isAttuned, isRepelled);
+      const minEff = minCastingLevelEff(spell, isAttuned, isRepelled);
+      const adj = mod > 0 ? Math.floor(Math.max(0, levelEff - minEff) / mod) : 0;
+      return Math.min(100, e.base + adj);
+    }
+    case "heal":
+      return e.value;
+    case "fullheal":
+      return "Full";
+    case "stat":
+      return "+" + e.base + "*";
+    default:
+      return null;
+  }
+}
+
+function fmtNum(n) {
+  if (typeof n !== "number") return n;
+  return Number.isInteger(n) ? String(n) : n.toFixed(1);
+}
+
+// ---- build header row ----
+const headRow = document.getElementById("head-row");
+let headHtml = '<th class="name-head" scope="col">Spell / Prayer</th>';
+for (let lv = 1; lv <= MAX_LEVEL; lv++) {
+  const decade = lv % 10 === 0 || lv === 1;
+  headHtml += `<th scope="col" class="${decade ? "lvl-decade" : ""}" data-lvl="${lv}">${lv}</th>`;
+}
+headRow.innerHTML = headHtml;
+
+// ---- filter state ----
+const state = { search: "", schools: new Set(), effects: new Set() };
+
+function schoolClass(school) { return school.toLowerCase(); }
+
+const schoolChipsEl = document.getElementById("school-chips");
+SCHOOLS.forEach(s => {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "chip " + schoolClass(s);
+  btn.textContent = s;
+  btn.setAttribute("aria-pressed", "false");
+  btn.addEventListener("click", () => {
+    if (state.schools.has(s)) state.schools.delete(s); else state.schools.add(s);
+    btn.setAttribute("aria-pressed", state.schools.has(s) ? "true" : "false");
+    render();
+  });
+  schoolChipsEl.appendChild(btn);
+});
+
+const effectChipsEl = document.getElementById("effect-chips");
+EFFECT_TYPES.forEach(([key, label]) => {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "chip";
+  btn.textContent = label;
+  btn.setAttribute("aria-pressed", "false");
+  btn.addEventListener("click", () => {
+    if (state.effects.has(key)) state.effects.delete(key); else state.effects.add(key);
+    btn.setAttribute("aria-pressed", state.effects.has(key) ? "true" : "false");
+    render();
+  });
+  effectChipsEl.appendChild(btn);
+});
+
+// ---- path attunement chips ----
+const pathChipsEl = document.getElementById("path-chips");
+const attuneSummaryEl = document.getElementById("attune-summary");
+const pathButtons = PATH_NAMES.map((name, i) => {
+  const bit = 1 << i;
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "chip path-chip";
+  btn.dataset.state = "neutral";
+  btn.textContent = name;
+  btn.addEventListener("click", () => {
+    if (attune.attuned & bit) {
+      attune.attuned &= ~bit;
+      attune.repelled |= bit;
+      btn.dataset.state = "repelled";
+      btn.innerHTML = '<span class="mark">&minus;</span>' + name;
+    } else if (attune.repelled & bit) {
+      attune.repelled &= ~bit;
+      btn.dataset.state = "neutral";
+      btn.textContent = name;
+    } else {
+      attune.attuned |= bit;
+      btn.dataset.state = "attuned";
+      btn.innerHTML = '<span class="mark">&plus;</span>' + name;
+    }
+    updateAttuneSummary();
+    render();
+  });
+  pathChipsEl.appendChild(btn);
+  return btn;
+});
+
+function updateAttuneSummary() {
+  const attuned = pathNamesFor(attune.attuned);
+  const repelled = pathNamesFor(attune.repelled);
+  if (!attuned.length && !repelled.length) {
+    attuneSummaryEl.textContent = "Path attunement — neutral";
+    return;
+  }
+  let bits = [];
+  if (attuned.length) bits.push("attuned: " + attuned.join(", "));
+  if (repelled.length) bits.push("repelled: " + repelled.join(", "));
+  attuneSummaryEl.textContent = "Path attunement — " + bits.join(" · ");
+}
+
+document.getElementById("attune-reset").addEventListener("click", () => {
+  attune.attuned = 0;
+  attune.repelled = 0;
+  pathButtons.forEach((btn, i) => {
+    btn.dataset.state = "neutral";
+    btn.textContent = PATH_NAMES[i];
+  });
+  updateAttuneSummary();
+  render();
+});
+
+document.getElementById("search").addEventListener("input", (ev) => {
+  state.search = ev.target.value.trim().toLowerCase();
+  render();
+});
+
+document.getElementById("lvl-go").addEventListener("click", jumpToLevel);
+document.getElementById("lvl-input").addEventListener("keydown", (ev) => {
+  if (ev.key === "Enter") jumpToLevel();
+});
+function jumpToLevel() {
+  const lv = Math.max(1, Math.min(MAX_LEVEL, parseInt(document.getElementById("lvl-input").value, 10) || 1));
+  const th = headRow.querySelector(`th[data-lvl="${lv}"]`);
+  const wrap = document.getElementById("table-wrap");
+  if (th) {
+    const nameW = document.querySelector(".name-head").offsetWidth;
+    wrap.scrollLeft = th.offsetLeft - nameW - 20;
+  }
+}
+
+function rowHtml(spell) {
+  const sc = schoolClass(spell.school);
+  const isAttuned = pathIsAttuned(spell);
+  const isRepelled = pathIsRepelled(spell);
+  let cells = "";
+  for (let lv = 1; lv <= MAX_LEVEL; lv++) {
+    if (!castableAt(spell, lv, isAttuned, isRepelled)) {
+      cells += `<td class="data-cell locked">&ndash;</td>`;
+      continue;
+    }
+    const cost = costAt(spell, lv, isAttuned, isRepelled);
+    const eff = effectAt(spell, lv, isAttuned, isRepelled);
+    const effCls = eff !== null ? "eff-" + spell.effect.type : "eff-none";
+    let text;
+    if (eff !== null) {
+      text = `${cost}/${fmtNum(eff)}`;
+    } else {
+      text = `${cost}`;
+    }
+    cells += `<td class="data-cell ${effCls}">${text}</td>`;
+  }
+  const paths = pathNamesFor(spell.path);
+  const pathCls = isAttuned ? "path-tag attuned" : (isRepelled ? "path-tag repelled" : "path-tag");
+  const pathText = paths.length ? paths.join(", ") : "&mdash;";
+  return `<tr>
+    <th class="name-cell" scope="row">
+      <span class="nm">${spell.name}</span>
+      <span class="meta"><span class="school-dot ${sc}"></span>${spell.school} &middot; L${spell.level} &middot; ${spell.effect.label}${spell.effect.multi ? " &#8224;" : ""} &middot; <span class="${pathCls}">${pathText}</span></span>
+    </th>
+    ${cells}
+  </tr>`;
+}
+
+function matches(spell) {
+  if (state.search && !spell.name.toLowerCase().includes(state.search)) return false;
+  if (state.schools.size && !state.schools.has(spell.school)) return false;
+  if (state.effects.size && !state.effects.has(spell.effect.type)) return false;
+  return true;
+}
+
+const bodyEl = document.getElementById("grimoire-body");
+const wrapEl = document.getElementById("table-wrap");
+
+function render() {
+  const filtered = SPELLS.filter(matches);
+  document.getElementById("stat-visible").textContent = filtered.length;
+  if (!filtered.length) {
+    bodyEl.innerHTML = "";
+    wrapEl.querySelector(".empty-state")?.remove();
+    const div = document.createElement("div");
+    div.className = "empty-state";
+    div.textContent = "No spells match these filters.";
+    wrapEl.appendChild(div);
+    return;
+  }
+  wrapEl.querySelector(".empty-state")?.remove();
+  bodyEl.innerHTML = filtered.map(rowHtml).join("");
+}
+
+render();
+</script>

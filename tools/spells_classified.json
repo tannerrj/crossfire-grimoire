@@ -1,0 +1,3647 @@
+[
+ {
+  "name": "cause light wounds",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 1,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 4,
+  "maxgrace": 6,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 6,
+   "multi": false
+  }
+ },
+ {
+  "name": "flaming aura",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 1,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 5,
+  "maxgrace": 20,
+  "dam_modifier": 25,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 6,
+   "multi": false
+  }
+ },
+ {
+  "name": "holy word",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 1,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 4,
+  "maxgrace": 24,
+  "dam_modifier": 4,
+  "path": 65536,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 2,
+   "multi": false
+  }
+ },
+ {
+  "name": "iron skin",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 1,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 8,
+  "maxgrace": 24,
+  "dam_modifier": 5,
+  "path": 33,
+  "effect": {
+   "type": "resist",
+   "label": "Physical resistance",
+   "base": 20,
+   "multi": false
+  }
+ },
+ {
+  "name": "light",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 1,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 4,
+  "maxgrace": 20,
+  "dam_modifier": 20,
+  "path": 524288,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "minor healing",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 1,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 4,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "heal",
+   "label": "Healing (avg HP)",
+   "value": 5.5,
+   "multi": false
+  }
+ },
+ {
+  "name": "rage",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 1,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 5,
+  "maxgrace": 4,
+  "dam_modifier": 5,
+  "path": 131072,
+  "effect": {
+   "type": "resist",
+   "label": "Physical resistance",
+   "base": 20,
+   "multi": true
+  }
+ },
+ {
+  "name": "turn undead",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 1,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 2,
+  "maxgrace": 24,
+  "dam_modifier": 0,
+  "path": 65536,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cause cold",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 2,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 20,
+  "dam_modifier": 3,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from cold",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 2,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 15,
+  "maxgrace": 40,
+  "dam_modifier": 3,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Cold resistance",
+   "base": 30,
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from fire",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 2,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 40,
+  "dam_modifier": 3,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Fire resistance",
+   "base": 30,
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from poison",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 2,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 40,
+  "dam_modifier": 4,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Poison resistance",
+   "base": 50,
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from electricity",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 3,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 15,
+  "maxgrace": 40,
+  "dam_modifier": 3,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Electricity resistance",
+   "base": 30,
+   "multi": false
+  }
+ },
+ {
+  "name": "bless",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 4,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 8,
+  "maxgrace": 30,
+  "dam_modifier": 0,
+  "path": 128,
+  "effect": {
+   "type": "resist",
+   "label": "Godpower resistance",
+   "base": 35,
+   "multi": false
+  }
+ },
+ {
+  "name": "cause flu",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 4,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 20,
+  "dam_modifier": 3,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "curse",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 4,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 8,
+  "maxgrace": 30,
+  "dam_modifier": 0,
+  "path": 128,
+  "effect": {
+   "type": "resist",
+   "label": "Godpower resistance",
+   "base": 35,
+   "multi": false
+  }
+ },
+ {
+  "name": "perceive self",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 4,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 5,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from confusion",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 4,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 40,
+  "dam_modifier": 4,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Confusion resistance",
+   "base": 50,
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from slow",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 4,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 40,
+  "dam_modifier": 4,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Slow resistance",
+   "base": 50,
+   "multi": false
+  }
+ },
+ {
+  "name": "cause medium wounds",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 6,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 8,
+  "maxgrace": 24,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 24,
+   "multi": false
+  }
+ },
+ {
+  "name": "detect evil",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 6,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 3,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from depletion",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 6,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 40,
+  "dam_modifier": 3,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Deplete resistance",
+   "base": 40,
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from paralysis",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 6,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 40,
+  "dam_modifier": 4,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Paralyze resistance",
+   "base": 50,
+   "multi": false
+  }
+ },
+ {
+  "name": "staff to snake",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 6,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 8,
+  "maxgrace": 18,
+  "dam_modifier": 1,
+  "path": 2048,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "summon cult monsters",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 6,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 12,
+  "maxgrace": 20,
+  "dam_modifier": 0,
+  "path": 64,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "wave",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 6,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 8,
+  "maxgrace": 24,
+  "dam_modifier": 3,
+  "path": 4,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "windstorm",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 6,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 3,
+  "maxgrace": 24,
+  "dam_modifier": 4,
+  "path": 8,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "consecrate",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 8,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 35,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 128,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cure poison",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 8,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 7,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Cures a status effect (no HP restored)",
+   "multi": false
+  }
+ },
+ {
+  "name": "forked lightning",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 8,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 15,
+  "maxgrace": 24,
+  "dam_modifier": 3,
+  "path": 8,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "medium healing",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 8,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 7,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "heal",
+   "label": "Healing (avg HP)",
+   "value": 15.5,
+   "multi": false
+  }
+ },
+ {
+  "name": "pacify",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 8,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 25,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from draining",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 8,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 25,
+  "maxgrace": 40,
+  "dam_modifier": 3,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Drain resistance",
+   "base": 35,
+   "multi": false
+  }
+ },
+ {
+  "name": "spiderweb",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 8,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 50,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "banishment",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 24,
+  "dam_modifier": 0,
+  "path": 65536,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 50,
+   "multi": false
+  }
+ },
+ {
+  "name": "cause heavy wounds",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 16,
+  "maxgrace": 50,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 50,
+   "multi": false
+  }
+ },
+ {
+  "name": "cause leprosy",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 20,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "command undead",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 12,
+  "maxgrace": 25,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cure disease",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 30,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Cures a status effect (no HP restored)",
+   "multi": false
+  }
+ },
+ {
+  "name": "darkness",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 15,
+  "maxgrace": 30,
+  "dam_modifier": 0,
+  "path": 524288,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "detect curse",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "divine shock",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 4,
+  "maxgrace": 10,
+  "dam_modifier": 4,
+  "path": 131072,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 3,
+   "multi": false
+  }
+ },
+ {
+  "name": "poison fog",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 15,
+  "maxgrace": 20,
+  "dam_modifier": 5,
+  "path": 131072,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from magic",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 30,
+  "maxgrace": 40,
+  "dam_modifier": 3,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Magic resistance",
+   "base": 30,
+   "multi": false
+  }
+ },
+ {
+  "name": "raise dead",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 150,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "vitriol",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 15,
+  "maxgrace": 6,
+  "dam_modifier": 25,
+  "path": 512,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 100,
+   "multi": false
+  }
+ },
+ {
+  "name": "vitriol splash",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 15,
+  "maxgrace": 20,
+  "dam_modifier": 4,
+  "path": 512,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 40,
+   "multi": false
+  }
+ },
+ {
+  "name": "wrathful eye",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 10,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 30,
+  "maxgrace": 24,
+  "dam_modifier": 3,
+  "path": 32,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 20,
+   "multi": false
+  }
+ },
+ {
+  "name": "call holy servant",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 12,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 30,
+  "maxgrace": 20,
+  "dam_modifier": 8,
+  "path": 64,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "glyph",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 12,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 5,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "invisible to undead",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 12,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 25,
+  "maxgrace": 20,
+  "dam_modifier": 0,
+  "path": 524288,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from cancellation",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 12,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 30,
+  "maxgrace": 40,
+  "dam_modifier": 3,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Cancellation resistance",
+   "base": 40,
+   "multi": false
+  }
+ },
+ {
+  "name": "sunspear",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 12,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 8,
+  "maxgrace": 30,
+  "dam_modifier": 3,
+  "path": 524288,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "wall of thorns",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 12,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 50,
+  "dam_modifier": 3,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 4,
+   "multi": false
+  }
+ },
+ {
+  "name": "cause critical wounds",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 14,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 25,
+  "maxgrace": 100,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 100,
+   "multi": false
+  }
+ },
+ {
+  "name": "cure confusion",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 14,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 8,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Cures a status effect (no HP restored)",
+   "multi": false
+  }
+ },
+ {
+  "name": "holy orb",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 14,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 25,
+  "dam_modifier": 2,
+  "path": 65536,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 30,
+   "multi": false
+  }
+ },
+ {
+  "name": "regeneration",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 14,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 15,
+  "maxgrace": 20,
+  "dam_modifier": 5,
+  "path": 128,
+  "effect": {
+   "type": "hpbonus",
+   "label": "Max HP bonus",
+   "base": 1,
+   "multi": false
+  }
+ },
+ {
+  "name": "sanctuary",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 14,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 30,
+  "maxgrace": 20,
+  "dam_modifier": 0,
+  "path": 1,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "show invisible",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 14,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "siren call",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 14,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 20,
+  "maxgrace": 27,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cause typhoid",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 16,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 60,
+  "maxgrace": 24,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "major healing",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 16,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 10,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "heal",
+   "label": "Healing (avg HP)",
+   "value": 26.5,
+   "multi": false
+  }
+ },
+ {
+  "name": "protection from attack",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 16,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 50,
+  "maxgrace": 40,
+  "dam_modifier": 3,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Physical resistance",
+   "base": 40,
+   "multi": false
+  }
+ },
+ {
+  "name": "remove curse",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 16,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 80,
+  "maxgrace": 30,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cure blindness",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 18,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 30,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Cures a status effect (no HP restored)",
+   "multi": false
+  }
+ },
+ {
+  "name": "holy possession",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 18,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 30,
+  "maxgrace": 30,
+  "dam_modifier": 0,
+  "path": 128,
+  "effect": {
+   "type": "resist",
+   "label": "Godpower resistance",
+   "base": 95,
+   "multi": false
+  }
+ },
+ {
+  "name": "insect plague",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 18,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 45,
+  "maxgrace": 35,
+  "dam_modifier": 3,
+  "path": 64,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 20,
+   "multi": false
+  }
+ },
+ {
+  "name": "zone of healing",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 18,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 50,
+  "maxgrace": 15,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cause smallpox",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 20,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 85,
+  "maxgrace": 20,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "conflict",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 20,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 50,
+  "maxgrace": 20,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "resurrection",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 20,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 250,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "summon avatar",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 20,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 60,
+  "maxgrace": 30,
+  "dam_modifier": 5,
+  "path": 64,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "word of recall",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 20,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 40,
+  "maxgrace": 20,
+  "dam_modifier": 0,
+  "path": 4096,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cause anthrax",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 24,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 50,
+  "maxgrace": 20,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cause many wounds",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 24,
+  "sp": 0,
+  "maxsp": 20,
+  "grace": 30,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cause rabies",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 24,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 120,
+  "maxgrace": 18,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cause red death",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 24,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 100,
+  "maxgrace": 12,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "holy wrath",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 24,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 40,
+  "maxgrace": 20,
+  "dam_modifier": 2,
+  "path": 65536,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 15,
+   "multi": false
+  }
+ },
+ {
+  "name": "reincarnation",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 25,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 350,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "finger of death",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 28,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 50,
+  "maxgrace": 35,
+  "dam_modifier": 4,
+  "path": 262144,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 24,
+   "multi": false
+  }
+ },
+ {
+  "name": "cause black death",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 30,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 120,
+  "maxgrace": 20,
+  "dam_modifier": 3,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "heal",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 30,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 50,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "fullheal",
+   "label": "Full heal",
+   "multi": false
+  }
+ },
+ {
+  "name": "remove damnation",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 30,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 150,
+  "maxgrace": 30,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "nightfall",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 32,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 120,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 524288,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "restoration",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 32,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 80,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "fullheal",
+   "label": "Full heal",
+   "multi": false
+  }
+ },
+ {
+  "name": "face of death",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 34,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 80,
+  "maxgrace": 24,
+  "dam_modifier": 0,
+  "path": 262144,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "daylight",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 36,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 120,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 524288,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "retributive strike",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 36,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 100,
+  "maxgrace": 75,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 55,
+   "multi": false
+  }
+ },
+ {
+  "name": "defense",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 40,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 75,
+  "maxgrace": 50,
+  "dam_modifier": 0,
+  "path": 1,
+  "effect": {
+   "type": "resist",
+   "label": "Physical resistance",
+   "base": 30,
+   "multi": false
+  }
+ },
+ {
+  "name": "peace",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 40,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 80,
+  "maxgrace": 36,
+  "dam_modifier": 0,
+  "path": 1,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "bless item",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 50,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 250,
+  "maxgrace": 30,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "curse item",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 50,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 200,
+  "maxgrace": 30,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "invulnerability",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 80,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 225,
+  "maxgrace": 50,
+  "dam_modifier": 0,
+  "path": 16384,
+  "effect": {
+   "type": "resist",
+   "label": "Physical resistance",
+   "base": 100,
+   "multi": false
+  }
+ },
+ {
+  "name": "cause white death",
+  "category": "Prayer",
+  "school": "Praying",
+  "level": 85,
+  "sp": 0,
+  "maxsp": 0,
+  "grace": 350,
+  "maxgrace": 24,
+  "dam_modifier": 1,
+  "path": 131072,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "armour",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 1,
+  "sp": 8,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 5,
+  "path": 33,
+  "effect": {
+   "type": "resist",
+   "label": "Physical resistance",
+   "base": 20,
+   "multi": false
+  }
+ },
+ {
+  "name": "icestorm",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 1,
+  "sp": 5,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 4,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 4,
+   "multi": false
+  }
+ },
+ {
+  "name": "small bullet",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 1,
+  "sp": 1,
+  "maxsp": 6,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 16,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "small snowstorm",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 1,
+  "sp": 6,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 6,
+  "path": 4,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "mana blast",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 4,
+  "sp": 10,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 4,
+  "path": 32768,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 4,
+   "multi": false
+  }
+ },
+ {
+  "name": "rune of frost",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 4,
+  "sp": 10,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 4,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "small manaball",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 4,
+  "sp": 12,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 32768,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "frostbolt",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 6,
+  "sp": 12,
+  "maxsp": 48,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 4,
+  "path": 4,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 12,
+   "multi": false
+  }
+ },
+ {
+  "name": "mana bolt",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 6,
+  "sp": 18,
+  "maxsp": 30,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 32768,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "medium snowstorm",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 6,
+  "sp": 10,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 4,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "large bullet",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 8,
+  "sp": 3,
+  "maxsp": 25,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 16,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 25,
+   "multi": false
+  }
+ },
+ {
+  "name": "medium manaball",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 8,
+  "sp": 6,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 32768,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "negative energy bolt",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 8,
+  "sp": 13,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 8,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "large snowstorm",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 10,
+  "sp": 16,
+  "maxsp": 32,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 4,
+  "path": 4,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "large manaball",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 12,
+  "sp": 32,
+  "maxsp": 32,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 4,
+  "path": 32768,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "sigil",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 12,
+  "sp": 5,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "bullet swarm",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 14,
+  "sp": 6,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "rune of magic drain",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 14,
+  "sp": 30,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 32768,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "asteroid",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 16,
+  "sp": 15,
+  "maxsp": 18,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 16,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 75,
+   "multi": false
+  }
+ },
+ {
+  "name": "create frost wall",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 16,
+  "sp": 8,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 2,
+   "multi": false
+  }
+ },
+ {
+  "name": "ball lightning",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 18,
+  "sp": 10,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 8,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "negative energy ball",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 18,
+  "sp": 10,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 8,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "bullet storm",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 20,
+  "sp": 8,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "cancellation",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 20,
+  "sp": 30,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 128,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "create pool of chaos",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 20,
+  "sp": 10,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 4,
+   "multi": false
+  }
+ },
+ {
+  "name": "build bullet wall",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 24,
+  "sp": 35,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 80,
+   "multi": false
+  }
+ },
+ {
+  "name": "frost nova",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 24,
+  "sp": 30,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "large icestorm",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 24,
+  "sp": 13,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 4,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 4,
+   "multi": false
+  }
+ },
+ {
+  "name": "shockwave",
+  "category": "Spell",
+  "school": "Evocation",
+  "level": 28,
+  "sp": 26,
+  "maxsp": 25,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 512,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "burning hands",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 1,
+  "sp": 5,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 4,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 4,
+   "multi": false
+  }
+ },
+ {
+  "name": "cannon shell",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 1,
+  "sp": 10,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 7,
+   "multi": false
+  }
+ },
+ {
+  "name": "small fireball",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 1,
+  "sp": 6,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "small lightning",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 1,
+  "sp": 6,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 8,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "searing weapon",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 3,
+  "sp": 10,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 34,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "firebolt",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 4,
+  "sp": 9,
+  "maxsp": 30,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "rune of fire",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 4,
+  "sp": 10,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "medium fireball",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 6,
+  "sp": 10,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "faery fire",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 8,
+  "sp": 10,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 524288,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "large lightning",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 8,
+  "sp": 13,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 8,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "rune of shocking",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 8,
+  "sp": 14,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "large fireball",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 10,
+  "sp": 16,
+  "maxsp": 32,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 4,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "rune of blasting",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 10,
+  "sp": 18,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 512,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "create bomb",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 12,
+  "sp": 10,
+  "maxsp": 72,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 6,
+  "path": 512,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 12,
+   "multi": false
+  }
+ },
+ {
+  "name": "create fire wall",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 12,
+  "sp": 5,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 4,
+   "multi": false
+  }
+ },
+ {
+  "name": "firetrap",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 12,
+  "sp": 5,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "comet",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 16,
+  "sp": 15,
+  "maxsp": 18,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 16,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 75,
+   "multi": false
+  }
+ },
+ {
+  "name": "hellfire",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 16,
+  "sp": 13,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 4,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "dragonbreath",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 24,
+  "sp": 13,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 25,
+   "multi": false
+  }
+ },
+ {
+  "name": "meteor swarm",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 24,
+  "sp": 30,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "build lightning wall",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 28,
+  "sp": 40,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 80,
+   "multi": false
+  }
+ },
+ {
+  "name": "build fireball wall",
+  "category": "Spell",
+  "school": "Pyromancy",
+  "level": 32,
+  "sp": 45,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 80,
+   "multi": false
+  }
+ },
+ {
+  "name": "detect magic",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 1,
+  "sp": 1,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "magic bullet",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 1,
+  "sp": 1,
+  "maxsp": 6,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 16,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "magic missile",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 1,
+  "sp": 1,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 16,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 9,
+   "multi": false
+  }
+ },
+ {
+  "name": "marking rune",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 1,
+  "sp": 2,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 64,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "probe",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 1,
+  "sp": 3,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "slow",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 1,
+  "sp": 5,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 5,
+   "multi": false
+  }
+ },
+ {
+  "name": "spark shower",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 1,
+  "sp": 5,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 5,
+  "path": 8,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 2,
+   "multi": false
+  }
+ },
+ {
+  "name": "confusion",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 2,
+  "sp": 10,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "paralyze",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 2,
+  "sp": 5,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 1024,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 25,
+   "multi": false
+  }
+ },
+ {
+  "name": "strength",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 2,
+  "sp": 10,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 32,
+  "effect": {
+   "type": "stat",
+   "label": "Str bonus (flat, random)",
+   "base": 1,
+   "multi": false
+  }
+ },
+ {
+  "name": "dexterity",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 3,
+  "sp": 12,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 32,
+  "effect": {
+   "type": "stat",
+   "label": "Dex bonus (flat, random)",
+   "base": 1,
+   "multi": false
+  }
+ },
+ {
+  "name": "wonder",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 3,
+  "sp": 10,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16384,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "constitution",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 4,
+  "sp": 15,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 32,
+  "effect": {
+   "type": "stat",
+   "label": "Con bonus (flat, random)",
+   "base": 1,
+   "multi": false
+  }
+ },
+ {
+  "name": "disarm",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 4,
+  "sp": 7,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 128,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "fear",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 4,
+  "sp": 6,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 5,
+   "multi": false
+  }
+ },
+ {
+  "name": "poison cloud",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 4,
+  "sp": 5,
+  "maxsp": 8,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 16,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "dark vision",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 5,
+  "sp": 10,
+  "maxsp": 30,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "magic mapping",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 5,
+  "sp": 15,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "transference",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 5,
+  "sp": 10,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 2,
+  "path": 32768,
+  "effect": {
+   "type": "transfer",
+   "label": "SP drained from target (to self)",
+   "base": 8,
+   "multi": false
+  }
+ },
+ {
+  "name": "charisma",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 6,
+  "sp": 12,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 32,
+  "effect": {
+   "type": "stat",
+   "label": "Cha bonus (flat, random)",
+   "base": 1,
+   "multi": false
+  }
+ },
+ {
+  "name": "invisible",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 6,
+  "sp": 15,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 524288,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "levitate",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 6,
+  "sp": 10,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16384,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "polymorph",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 6,
+  "sp": 20,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16384,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "rune of transference",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 6,
+  "sp": 12,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 32768,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "animate weapon",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 7,
+  "sp": 25,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 4096,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 2,
+   "multi": false
+  }
+ },
+ {
+  "name": "antimagic rune",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 7,
+  "sp": 5,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 128,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "mass confusion",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 7,
+  "sp": 20,
+  "maxsp": 25,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "identify",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 8,
+  "sp": 60,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 5,
+  "path": 8192,
+  "effect": {
+   "type": "count",
+   "label": "Items identified",
+   "base": 3,
+   "multi": false
+  }
+ },
+ {
+  "name": "improved invisibility",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 8,
+  "sp": 25,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 524288,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "dimension door",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 10,
+  "sp": 25,
+  "maxsp": 25,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 4096,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "steambolt",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 10,
+  "sp": 10,
+  "maxsp": 40,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 2,
+  "path": 2,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 12,
+   "multi": false
+  }
+ },
+ {
+  "name": "xray",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 10,
+  "sp": 20,
+  "maxsp": 36,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 8192,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "magic drain",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 12,
+  "sp": 20,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 32768,
+  "effect": {
+   "type": "transfer",
+   "label": "SP drained from caster's mana pool",
+   "base": 75,
+   "multi": false
+  }
+ },
+ {
+  "name": "magic rune",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 12,
+  "sp": 5,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "missile swarm",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 14,
+  "sp": 6,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "create repulsion wall",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 15,
+  "sp": 30,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "town portal",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 15,
+  "sp": 50,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 4096,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "rune of death",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 17,
+  "sp": 20,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 262144,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "color spray",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 26,
+  "sp": 35,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 3,
+  "path": 16384,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 25,
+   "multi": false
+  }
+ },
+ {
+  "name": "destruction",
+  "category": "Spell",
+  "school": "Sorcery",
+  "level": 30,
+  "sp": 30,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 512,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "create missile",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 1,
+  "sp": 5,
+  "maxsp": 15,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 6,
+  "path": 2048,
+  "effect": {
+   "type": "enchant",
+   "label": "Bonus enchantment on created ammo",
+   "base": 0,
+   "multi": false
+  }
+ },
+ {
+  "name": "summon lesser golem",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 1,
+  "sp": 3,
+  "maxsp": 15,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 64,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 25,
+   "multi": false
+  }
+ },
+ {
+  "name": "summon golem",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 2,
+  "sp": 5,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 2,
+  "path": 64,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 60,
+   "multi": false
+  }
+ },
+ {
+  "name": "earth to dust",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 4,
+  "sp": 5,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 16384,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "summon pet monster",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 4,
+  "sp": 5,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 64,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "counterspell",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 6,
+  "sp": 10,
+  "maxsp": 24,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 128,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "magehound",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 6,
+  "sp": 12,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 64,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "summon devil",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 6,
+  "sp": 20,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 10,
+  "path": 64,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 10,
+   "multi": false
+  }
+ },
+ {
+  "name": "transmutation",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 6,
+  "sp": 5,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 16384,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "create earth wall",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 8,
+  "sp": 6,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "summon earth elemental",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 8,
+  "sp": 15,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 5,
+  "path": 64,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 60,
+   "multi": false
+  }
+ },
+ {
+  "name": "mystic fist",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 10,
+  "sp": 10,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 5,
+  "path": 64,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 40,
+   "multi": false
+  }
+ },
+ {
+  "name": "summon water elemental",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 10,
+  "sp": 15,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 5,
+  "path": 64,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 50,
+   "multi": false
+  }
+ },
+ {
+  "name": "create food",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 12,
+  "sp": 10,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "dancing sword",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 12,
+  "sp": 25,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 2,
+  "path": 2048,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 50,
+   "multi": false
+  }
+ },
+ {
+  "name": "pentagram",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 12,
+  "sp": 5,
+  "maxsp": 0,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 2048,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "summon air elemental",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 12,
+  "sp": 20,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 5,
+  "path": 64,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 40,
+   "multi": false
+  }
+ },
+ {
+  "name": "summon fire elemental",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 14,
+  "sp": 25,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 10,
+  "path": 64,
+  "effect": {
+   "type": "summon",
+   "label": "Summon power",
+   "base": 20,
+   "multi": false
+  }
+ },
+ {
+  "name": "charm monsters",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 15,
+  "sp": 20,
+  "maxsp": 27,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 1024,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "earthquake",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 15,
+  "sp": 35,
+  "maxsp": 15,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 10,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 80,
+   "multi": false
+  }
+ },
+ {
+  "name": "counterwall",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 16,
+  "sp": 8,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 0,
+  "path": 256,
+  "effect": {
+   "type": "utility",
+   "label": "Utility (no scaled magnitude)",
+   "multi": false
+  }
+ },
+ {
+  "name": "build director",
+  "category": "Spell",
+  "school": "Summoning",
+  "level": 20,
+  "sp": 30,
+  "maxsp": 20,
+  "grace": 0,
+  "maxgrace": 0,
+  "dam_modifier": 1,
+  "path": 2048,
+  "effect": {
+   "type": "damage",
+   "label": "Damage",
+   "base": 80,
+   "multi": false
+  }
+ }
+]
